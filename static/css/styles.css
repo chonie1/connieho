@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+  padding: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  height: 100%;
+}
+
+h1 {
+  font-family: "Sacramento",sans-serif;
+  font-size: 5em;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+a {
+  margin:10px;
+}
+
+#profile-pic {
+  border-radius: 100%;
+}
+
+#cloud1 {
+  position: absolute;
+  right: 20px;
+}
+
+#cloud2 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+
+.bold {
+  font-style: italic;
+}
+
+.content-container {
+  position: relative;
+}
+
+.rgb-container {
+  height: 100px;
+  width: 300px;
+  margin: 10px auto; /* this will allow centering */
+  position: relative; /* allows the children to be absolute to this containers */
+  background-color: gray;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+  height: 100%;
+  width: 100px;
+  position: absolute;
+}
+
+.green{
+  background-color:rgb(0, 255, 0);
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  left: 100px;
+}
+
+.blue {
+  background-color: rgb(0, 0, 255);
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  left: 200px;
+
+}
+
+footer {
+  font-size: smaller;
+  color: gray
+}
