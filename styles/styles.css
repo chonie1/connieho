@@ -3,45 +3,45 @@ body {
   text-align: center;
   font-family: "Source Sans Pro", "Roboto" sans-serif;
   font-weight: 100;
-  background-image: url('/images/background.jpg');
+  background-image: url('/images/background3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
   text-transform: uppercase;
-  padding: 5%;
 }
 
 h1 {
   letter-spacing: 5px;
   font-weight: 100;
-  font-size: 2.5rem;
-  margin:0;
+  font-size: 2rem;
+  margin: 0;
 }
-
 
 a {
   text-decoration: none;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
-#footer {
-  color:white;
-  font-size: small; 
-  position: absolute;
-  bottom: 0%;
+button {
+  background-color: transparent;
+  border: none;
+  color: #d3d3d3;
+  text-decoration: none;
 }
 
 .wrapper {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .card {
-  padding: 10%
+  width: 400px;
+  padding: 0 50%;
 }
 
 .profile-pic {
@@ -50,6 +50,61 @@ p {
 }
 
 .icon {
-  color: #8f8f8f;
+  color: #d3d3d3;
+  font-size:  2rem;
   margin: 2% 2% 10%;
 }
+
+footer {
+  position: absolute;
+  bottom: 0%;
+}
+
+footer p {
+  color: #d3d3d3;
+  font-size: 0.5rem;
+  letter-spacing: 2px;
+}
+
+/* Effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); */
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); */
+  }
+  to {
+    opacity: 1;
+    /* -webkit-transform: none;
+    transform: none; */
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animate {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.one {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  }
