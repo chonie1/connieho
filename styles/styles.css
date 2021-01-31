@@ -1,9 +1,23 @@
+/* Effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); */
+  }
+  to {
+    opacity: 1;
 
+    transform: none;
+  }
+}
+
+/* Tag Styles */
 body {
   text-align: center;
   font-family: "Source Sans Pro", "Roboto" sans-serif;
   font-weight: 100;
-  background-image: url('/images/background3.jpg');
+  background: linear-gradient(#B1BDDD, #AA878A);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -39,9 +53,16 @@ button {
   justify-content: center;
 }
 
+.background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
 .card {
   width: 400px;
-  padding: 0 50%;
+
 }
 
 .profile-pic {
@@ -49,14 +70,22 @@ button {
   margin: 10% auto;
 }
 
+
 .icon {
   color: #d3d3d3;
   font-size:  2rem;
   margin: 2% 2% 10%;
 }
 
+.icon:hover {
+  background: linear-gradient(#B1BDDD, #AA878A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 footer {
   position: absolute;
+  margin: 0 auto;
   bottom: 0%;
 }
 
@@ -66,45 +95,26 @@ footer p {
   letter-spacing: 2px;
 }
 
-/* Effects */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    /* -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); */
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+/* Dark Mode */
+.dark-btn {
+  background-color: transparent;
+  border: none;
+  color: #d3d3d3;
+  text-decoration: none;
+  position: absolute;
+  right: 5%;
 }
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    /* -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); */
-  }
-  to {
-    opacity: 1;
-    /* -webkit-transform: none;
-    transform: none; */
-  }
+
+.card.dark-mode{
+  background: #222;
+  color:#d3d3d3;
 }
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
+
 
 .animate {
-  -webkit-animation-duration: 3s;
+  animation-name: fadeIn;
   animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 
-.one {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-  }

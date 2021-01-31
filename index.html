@@ -19,25 +19,30 @@
     
     <!-- Stylesheets & Scripts-->
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
   </head>
 
   <body>
-    <div class="wrapper animate fadeIn one">
-      <div class="shadow-lg p-3 mb-5 bg-white rounded card">
+    <div class="wrapper animate">
+      <img id="background" class="background-img" src="/images/background3.jpg">
+      <div class="shadow-lg p-3 mb-5 rounded card">
         <img class="profile-pic" src="/images/profile.jpg" alt="profile pic" width=180 height=180>
         <h1>Connie Ho</h1>
         <hr>
-        <p>full stack web developer</p>
+        <p id="role">full stack web developer</p>
         <div>
-          <a class="far fa-envelope icon"></a>
+          <a href="mailto:connie3@ualberta.ca" class="far fa-envelope icon"></a>
           <a href="https://www.linkedin.com/in/connie-ho-7540bbaa" class="fab fa-linkedin-in icon"></a>
           <a href="https://github.com/chonie1" class="fab fa-github icon"></a>
-          <a class="fab fa-instagram icon"></a>
+          <a href="https://www.instagram.com/cnnho" class="fab fa-instagram icon"></a>
+        </div>
+        <div class="dark-btn">
+          <button id="dark-mode" class="fas fa-adjust"></button>
         </div>
       </div>
-      <footer id="footer">
-        <p name="copyright">© Connie Ho</p>
+      <footer>
+        <p>© Connie Ho <span id="year"></span></p>
       </footer>
     </div>
   </body>
