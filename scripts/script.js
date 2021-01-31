@@ -3,7 +3,6 @@ $(document).ready(function() {
   //Change copyright date every year
   let current = new Date()
   year = current.getFullYear()
-  console.log(year)
   $("#year").text(`${year}`)
 
 
@@ -12,10 +11,10 @@ $(document).ready(function() {
       $(".card").toggleClass("dark-mode")
       if ($("#role").text() == "full stack web developer") {  
         $("#role").text("chemical biomedical engineer")
-        $("#background").attr("src","/images/background-dark2.jpg")
+        $("#background").attr("src","./images/background-dark2.jpg")
       } else {
         $("#role").text("full stack web developer")
-        $("#background").attr("src","/images/background3.jpg")
+        $("#background").attr("src","./images/background3.jpg")
       }
       
     }
