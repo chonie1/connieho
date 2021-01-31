@@ -118,13 +118,13 @@ footer p {
 }
 
 /* No greater than 900 and no less than 400 px */
-@media (max-width:900px) and (min-width:400px) {
+@media (max-width:900px) and (min-width:450px) {
   .card {
     width: 50%;
   }
 }
 
-@media (max-width:400px) {
+@media (max-width:450px) {
   .card {
     width: 90%;
   }
