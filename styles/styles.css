@@ -20,8 +20,9 @@ html {
 body {
   height: 100%;
   text-align: center;
+  color: rgba(255,255,255,0.6);
   font-family: "Source Sans Pro", "Roboto" sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   background: linear-gradient(#B1BDDD, #AA878A);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -31,9 +32,13 @@ body {
 
 h1 {
   letter-spacing: 5px;
-  font-weight: 100;
   font-size: 2rem;
   margin: 0;
+  /* color: rgba(255,255,255,0.5) */
+}
+
+hr {
+  border: 1px solid white;
 }
 
 a {
@@ -47,7 +52,7 @@ p {
 button {
   background-color: transparent;
   border: none;
-  color: #d3d3d3;
+  color: #a9a9a9;
   text-decoration: none;
 }
 
@@ -67,6 +72,12 @@ button {
 
 .card {
   width: 400px;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.3), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(20px);
+  border: none;
+  border: 0.5px solid;
+  border-image-source: linear-gradient(to bottom right, rgba(255,255,255,0.5), rgba(255,255,255,0));
+  border-image-slice: 1;
 }
 
 .profile-pic {
@@ -76,7 +87,7 @@ button {
 
 
 .icon {
-  color: #d3d3d3;
+  color: rgba(255, 255, 255, 0.5);
   font-size:  2rem;
   margin: 2% 2% 10%;
 }
@@ -109,10 +120,10 @@ footer p {
   right: 5%;
 }
 
-.card.dark-mode{
+/* .card.dark-mode{
   background: #222;
   color:#d3d3d3;
-}
+} */
 
 
 .animate {

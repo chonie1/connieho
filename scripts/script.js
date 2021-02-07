@@ -8,7 +8,7 @@ $(document).ready(function() {
 
   //Toggle dark mode
     function darkMode() {
-      $(".card").toggleClass("dark-mode")
+      // $(".card").toggleClass("dark-mode")
       if ($("#role").text() == "full stack web developer") {  
         $("#role").text("chemical biomedical engineer")
         $("#background").attr("src","./images/background-dark2.jpg")
