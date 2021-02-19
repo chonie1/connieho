@@ -1,4 +1,4 @@
 # connieho
 
 Contact Card:
-https://chonie1.github.io/connieho/
+https://connie-ho.github.io/connieho/
