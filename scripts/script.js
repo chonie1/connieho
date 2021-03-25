@@ -28,10 +28,8 @@ $(document).ready(function() {
     }
 
     $("#dark-mode").click(function() {
-      $("body").fadeOut(1000)
-      setTimeout(darkMode,1000)
-      $("body").fadeIn(1000)
-      setTimeout(changeBackground,2000)
+      darkMode()
+      changeBackground
       
     });
 

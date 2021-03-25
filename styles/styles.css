@@ -2,8 +2,6 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    /* -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0); */
   }
   to {
     opacity: 1;
@@ -52,8 +50,15 @@ p {
 button {
   background-color: transparent;
   border: none;
+  outline: 0 !important;
   color: #a9a9a9;
   text-decoration: none;
+}
+
+button:hover {
+  background: linear-gradient(#B1BDDD, #AA878A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .wrapper {
