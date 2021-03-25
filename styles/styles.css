@@ -138,12 +138,6 @@ footer p {
   animation-delay: 0.5s;
 }
 
-/* No greater than 900 and no less than 400 px */
-@media (max-width:900px) and (min-width:450px) {
-  .card {
-    width: 50%;
-  }
-}
 
 @media (max-width:450px) {
   .card {
